@@ -15,7 +15,8 @@ public class PreTraining {
     @SequenceGenerator(
             name = "pre_training_generator",
             sequenceName = "pre_training_generator",
-            initialValue = 1
+            initialValue = 1,
+            allocationSize=1
     )
 	private Long id;
 	@Column(unique = true)
